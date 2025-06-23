@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Fitness Community",
+    "slug": "fitness-app-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/placeholder.svg",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./public/placeholder.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#262135"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fitness.community"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./public/placeholder.svg",
+        "backgroundColor": "#262135"
+      },
+      "package": "com.fitness.community"
+    },
+    "web": {
+      "favicon": "./public/favicon.ico"
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to share your fitness journey.",
+          "cameraPermission": "The app accesses your camera to capture fitness moments."
+        }
+      ]
+    ],
+    "notification": {
+      "icon": "./public/placeholder.svg",
+      "color": "#F6F3BA"
+    }
+  }
+}
